@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>ModalCity</title>
+  <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <a href="../index/index.html">
+        <div class="logo">
+          <p class="mainTitle">DiscoveryPortugal</p>
+          <img src="../assets/portugal_flag.png" alt="Logo" class="logoImg">
+        </div>
+      </a>
+      <div class="navbarpagesGroup">
+        <p class="navbarPage"><a href="../login/login.html">Painel de Administrador</a></p>
+        <div class="pageDivider"></div>
+        <p class="navbarPage"><a href="../signup/singup.html">Logout</a></p>
+        <div class="pageDivider"></div>
+        <p class="navbarPage"><a href="./contact.html">Contatos</a></p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="cityBanner">
+      <div class="cityInfo">
+        <div class="infoButton">
+          <button type="button" class="btn btn-primary addInfoButton" data-bs-toggle="modal" data-bs-target="#addInfoModal">
+            <strong>Adicionar informação</strong>
+          </button>
+        </div>
+        <div class="cityTitle">Braga</div>
+        <div class="containerDetails">
+          <div class="cityDescription">Braga possui um vasto património cultural, cujo ex-líbris é o Santuário do Bom
+            Jesus do Monte, Património Mundial da UNESCO. Em 2012 foi distinguida como Capital Europeia da Juventude e
+            em
+            2018 foi Cidade Europeia do Desporto.
+          </div>
+          <div class="rateStar">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+        </div>
+      </div>
+      <div class="imageOverlay"></div>
+    </div>
+    <div class="reviewTitle">Avaliações</div>
+    <div class="reviewsSection">
+      <div class="reviewCard">
+        <div class="reviewHeader">
+          <div class="reviewer">Miyawaki Sakura</div>
+          <div class="reviewDate">21/03/2024</div>
+        </div>
+        <div class="rateStar">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <div class="reviewText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna.</div>
+        <div class="reviewVotes">
+          <div class="reviewVotesUp">
+            <p class="voteTextUp">21</p>
+            <img src="../assets/up_vote.png" alt="Upvote" class="voteImg">
+          </div>
+          <div class="reviewVotesDown">
+            <img src="../assets/down_vote.png" alt="Downvote" class="voteImg">
+            <p class="voteTextDown">03</p>
+          </div>
+        </div>
+      </div>
+      <div class="reviewCard">
+        <div class="reviewHeader">
+          <div class="reviewer">Marcos</div>
+          <div class="reviewDate">21/03/2024</div>
+        </div>
+        <div class="rateStar">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <div class="reviewText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna.</div>
+        <div class="reviewVotes">
+          <div class="reviewVotesUp">
+            <p class="voteTextUp">21</p>
+            <img src="../assets/up_vote.png" alt="Upvote" class="voteImg">
+          </div>
+          <div class="reviewVotesDown">
+            <img src="../assets/down_vote.png" alt="Downvote" class="voteImg">
+            <p class="voteTextDown">03</p>
+          </div>
+        </div>
+      </div>
+      <div class="reviewCard">
+        <div class="reviewHeader">
+          <div class="reviewer">Julio Cesar</div>
+          <div class="reviewDate">21/03/2024</div>
+        </div>
+        <div class="rateStar">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <div class="reviewText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna.</div>
+        <div class="reviewVotes">
+          <div class="reviewVotesUp">
+            <p class="voteTextUp">21</p>
+            <img src="../assets/up_vote.png" alt="Upvote" class="voteImg">
+          </div>
+          <div class="reviewVotesDown">
+            <img src="../assets/down_vote.png" alt="Downvote" class="voteImg">
+            <p class="voteTextDown">03</p>
+          </div>
+        </div>
+      </div>
+      <div class="reviewCard">
+        <div class="reviewHeader">
+          <div class="reviewer">Hanni Pham</div>
+          <div class="reviewDate">21/03/2024</div>
+        </div>
+        <div class="rateStar">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <div class="reviewText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna.</div>
+        <div class="reviewVotes">
+          <div class="reviewVotesUp">
+            <p class="voteTextUp">21</p>
+            <img src="../assets/up_vote.png" alt="Upvote" class="voteImg">
+          </div>
+          <div class="reviewVotesDown">
+            <img src="../assets/down_vote.png" alt="Downvote" class="voteImg">
+            <p class="voteTextDown">03</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loadMore">Carregar mais...</div>
+    <div class="reviewTitle">Gastronomia</div>
+    <div class="cardSection">
+      <div class="cardArea">
+        <img src="../assets/food.jpg" alt="Food" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">Bacalhau à Braga</div>
+          <div class="cardDescription">O Bacalhau à Braga é um prato típico da região do Minho, em Portugal. É um prato
+            de
+            bacalhau cozido com batatas, cebolas, pimentos, azeite e ovos. É um prato muito saboroso e fácil de fazer.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <img src="../assets/food.jpg" alt="Food" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">Bacalhau à Braga</div>
+          <div class="cardDescription">O Bacalhau à Braga é um prato típico da região do Minho, em Portugal. É um prato
+            de
+            bacalhau cozido com batatas, cebolas, pimentos, azeite e ovos. É um prato muito saboroso e fácil de fazer.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <img src="../assets/food.jpg" alt="Food" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">Bacalhau à Braga</div>
+          <div class="cardDescription">O Bacalhau à Braga é um prato típico da região do Minho, em Portugal. É um prato
+            de
+            bacalhau cozido com batatas, cebolas, pimentos, azeite e ovos. É um prato muito saboroso e fácil de fazer.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <img src="../assets/food.jpg" alt="Food" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">Bacalhau à Braga</div>
+          <div class="cardDescription">O Bacalhau à Braga é um prato típico da região do Minho, em Portugal. É um prato
+            de
+            bacalhau cozido com batatas, cebolas, pimentos, azeite e ovos. É um prato muito saboroso e fácil de fazer.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loadMore">Carregar mais...</div>
+    <div class="reviewTitle">O que fazer</div>
+    <div class="cardSection">
+      <div class="cardArea">
+        <img src="../assets/ToDo.jpg" alt="ToDo" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">Arco da Porta Nova</div>
+          <div class="cardDescription">
+            O Arco da Porta Nova é um arco triunfal situado na cidade de Braga, em Portugal. Foi construído no século
+            XVIII. É um dos principais monumentos da cidade e um dos mais visitados.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <img src="../assets/ToDo.jpg" alt="ToDo" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">Arco da Porta Nova</div>
+          <div class="cardDescription">
+            O Arco da Porta Nova é um arco triunfal situado na cidade de Braga, em Portugal. Foi construído no século
+            XVIII. É um dos principais monumentos da cidade e um dos mais visitados.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <img src="../assets/ToDo.jpg" alt="ToDo" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">Arco da Porta Nova</div>
+          <div class="cardDescription">
+            O Arco da Porta Nova é um arco triunfal situado na cidade de Braga, em Portugal. Foi construído no século
+            XVIII. É um dos principais monumentos da cidade e um dos mais visitados.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <img src="../assets/ToDo.jpg" alt="ToDo" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">Arco da Porta Nova</div>
+          <div class="cardDescription">
+            O Arco da Porta Nova é um arco triunfal situado na cidade de Braga, em Portugal. Foi construído no século
+            XVIII. É um dos principais monumentos da cidade e um dos mais visitados.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loadMore">Carregar mais...</div>
+    <div class="reviewTitle">Cultura</div>
+    <div class="cardSection">
+      <div class="cardArea">
+        <img src="../assets/cultura.jpg" alt="ToDo" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">São João de Braga</div>
+          <div class="cardDescription">
+            A Sé de Braga, também conhecida como Sé de São Salvador de Braga, é um dos mais importantes monumentos
+            religiosos de Portugal. É a sede da Arquidiocese de Braga e um dos principais locais de culto do país.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <img src="../assets/cultura.jpg" alt="ToDo" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">São João de Braga</div>
+          <div class="cardDescription">
+            A Sé de Braga, também conhecida como Sé de São Salvador de Braga, é um dos mais importantes monumentos
+            religiosos de Portugal. É a sede da Arquidiocese de Braga e um dos principais locais de culto do país.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <img src="../assets/cultura.jpg" alt="ToDo" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">São João de Braga</div>
+          <div class="cardDescription">
+            A Sé de Braga, também conhecida como Sé de São Salvador de Braga, é um dos mais importantes monumentos
+            religiosos de Portugal. É a sede da Arquidiocese de Braga e um dos principais locais de culto do país.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <img src="../assets/cultura.jpg" alt="ToDo" class="cardImg">
+        <div class="cardInfo">
+          <div class="cardTitle">São João de Braga</div>
+          <div class="cardDescription">
+            A Sé de Braga, também conhecida como Sé de São Salvador de Braga, é um dos mais importantes monumentos
+            religiosos de Portugal. É a sede da Arquidiocese de Braga e um dos principais locais de culto do país.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loadMore">Carregar mais...</div>
+    <div class="reviewTitle">Útil</div>
+    <div class="cardSection">
+      <div class="cardArea">
+        <div class="cardInfo">
+          <div class="cardTitle">Festa São João de Braga</div>
+          <div class="cardLink"><a href="https://www.saojoaobraga.pt/">Saiba mais</a></div>
+          <div class="cardDescription">
+            A Festa de São João de Braga é uma das festas mais tradicionais de Portugal. A festa é celebrada no dia 24
+            de
+            junho, dia de São João, e é uma das festas mais antigas do país. A festa é marcada por várias atividades
+            culturais, religiosas e recreativas.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <div class="cardInfo">
+          <div class="cardTitle">Festa São João de Braga</div>
+          <div class="cardLink"><a href="https://www.saojoaobraga.pt/">Saiba mais</a></div>
+          <div class="cardDescription">
+            A Festa de São João de Braga é uma das festas mais tradicionais de Portugal. A festa é celebrada no dia 24
+            de
+            junho, dia de São João, e é uma das festas mais antigas do país. A festa é marcada por várias atividades
+            culturais, religiosas e recreativas.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <div class="cardInfo">
+          <div class="cardTitle">Festa São João de Braga</div>
+          <div class="cardLink"><a href="https://www.saojoaobraga.pt/">Saiba mais</a></div>
+          <div class="cardDescription">
+            A Festa de São João de Braga é uma das festas mais tradicionais de Portugal. A festa é celebrada no dia 24
+            de
+            junho, dia de São João, e é uma das festas mais antigas do país. A festa é marcada por várias atividades
+            culturais, religiosas e recreativas.
+          </div>
+        </div>
+      </div>
+      <div class="cardArea">
+        <div class="cardInfo">
+          <div class="cardTitle">Festa São João de Braga</div>
+          <div class="cardLink"><a href="https://www.saojoaobraga.pt/">Saiba mais</a></div>
+          <div class="cardDescription">
+            A Festa de São João de Braga é uma das festas mais tradicionais de Portugal. A festa é celebrada no dia 24
+            de
+            junho, dia de São João, e é uma das festas mais antigas do país. A festa é marcada por várias atividades
+            culturais, religiosas e recreativas.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loadMore">Carregar mais...</div>
+    <div class="modal fade" id="addInfoModal" tabindex="-1" aria-labelledby="addInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title modalTitle text-center mx-auto d-block" id="addInfoModalLabel">Adicionar Informação</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- First Card -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <span><strong>Tipo:</strong> </span><i class="fa fa-arrow-down"></i> <span class="card-title">Avaliação</span>
+                        </div>
+                    </div>
+                    <!-- Second Card -->
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam
+                                cum corrupti, nobis eaque dicta nisi voluptates iure natus voluptatum sint, possimus
+                                vitae explicabo facilis quia, ut culpa quibusdam tempore corporis.</p>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <button type="button" class="btn btn-primary enviarButton mx-auto d-block">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </main>
+  
+  <footer class="footer">
+    <p class="footerText">Trabalho de Desenvolvimento Web 2024 | Desenvolvido por Julio Cesar e Marcos Moraes</p>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
